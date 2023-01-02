@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    background-color: #fff !important;
+}
+.navbar-brand{
+    font-size: 1.9rem !important;
+}
+.navbar a{
+    color: #565387 !important;
+}
+.menu_active{
+    font-weight: bold;
+    border-bottom: 1px solid #565387;
+
+
+}
+.navbar a:hover{
+    color:
+green !important;
+}
+.brand-name{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #236fa1;
+}
+.img-fluid{
+    animation: ambuj  3s ease-in-out infinite alternate-reverse both !important;
+    margin-left: 100px;
+}
+.ambuj{
+    position: fixed;
+    bottom: 0;
+    
+}
+@keyframes ambuj {
+        0%{
+            transform: translateY(20px);
+        }
+        100%{
+            transform: translateY(-20px);
+        }
+        
+  
+    /* margin-top: 200px; */
+}
+.hle{
+    margin: 100px 0 0 0;
+}
+.img-fluid:hover{
+    transform: translateY(-20px) !important;
+    transition-duration: 3s !important;
+    box-shadow: 0 0 30px #000 !important;
+    
+}
+.img-fluid{
+    border-radius: 20px;
+}
+.btn-get-started{
+    border: 2px solid rgb(66, 112, 165);
+    border-radius: 30px ;
+    padding: 10px 30px;
+    color: rgb(66, 112, 165);
+  
+    transition-duration: 0.5s;
+    text-decoration: none;
+}
+.btn-get-started:hover{
+    background-color: rgb(66, 112, 165);
+    color: #fff;
+}
+.bod{
+    font-weight: 900 !important;
+}
+.fdir{
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+}
+.ambuj{
+    /* position: absolute !important;
+    bottom: 0   !important;
+    width: 100%     !important; */
+    margin-top :150px !important;
+
+
+}
+@media screen and (max-width:412px){
+    .img-fluid{
+        margin-left: 0px !important;
+    }
+}
+    
+
+/* about us */
+
+.about{
+        text-align: center;
+        text-shadow: 1px 1px 2px rgb(85, 83, 83);
+
+}
+.mycontainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.left{
+    display: inline-block;
+    width: 49%;
+    border: 2px solid black;
+    height: 700px;
+}
+.aboutImg{
+
+   width: 700px;
+   height: 450px;
+   
+}
+.right{
+    display: inline-block;
+    width: 49%;
+    border: 2px solid black;
+    height: 700px;
+}
+/* cart */
+.cart-page-container{
+    display: flex;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .cart-page-container table{
+    flex: 65%;
+      border-collapse: collapse;
+  }
+  .cart-page-container table td{
+    border: 1px solid #ccc;
+    padding: 15px;
+  }
+  .price-details{
+    flex: 35%;
+    margin: 0px 30px;
+  }
+  .price-details .adjust-price{
+    display: flex;
+      justify-content: space-around;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+  }
+  .price-details .adjust-price span{
+    font-size: 20px;
+  }
+  /* cart */
