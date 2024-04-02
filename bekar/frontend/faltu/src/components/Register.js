@@ -22,10 +22,10 @@ function Register() {
     const submitData = async () => {
         const { name, email, mobile, address, password, conpassword } = state
         var nameExp = /^[a-zA-Z\s]+$/;
-        const emailRegExp = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+        const emailRegExp = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         const mobileRegExp = /^[0-9]*$/;
         const addressRegExp = /^[a-zA-Z0-9\s,.'-]{3,}$/;
-        const passwordRegExp = /^[a-zA-Z]\w{3,14}$/;
+        const passwordRegExp = /^.{4,}$/;
         const conpasswordRegExp = /^[a-zA-Z]\w{3,14}$/;
         ///////name validation//////////////
         if (name === "") {
