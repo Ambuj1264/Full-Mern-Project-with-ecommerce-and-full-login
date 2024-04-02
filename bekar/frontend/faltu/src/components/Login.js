@@ -14,8 +14,9 @@ function Login() {
 
     const submitData = async () => {
         const { email, password } = state
-        const emailRegExp = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
-        const passwordRegExp = /^[a-zA-Z]\w{3,14}$/;
+       var nameExp = /^[a-zA-Z\s]+$/;
+        const emailRegExp = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        const passwordRegExp = /^.{4,}$/;
         //////////email validation//////////////////
         if (email === "") {
             setEmailMessage("Email field is not blank")
